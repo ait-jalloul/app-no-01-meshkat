@@ -1,0 +1,303 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+/*header-start*/
+
+header {
+    height: 600px;
+    width: 100%;
+    background-image: url("../imgs/slide-01.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;	
+}
+header nav{
+    height: 80px;
+    width: /*1130px*/100%;
+    background-color: rgba(240, 248, 255, 0.116);
+}
+header nav .nav-container{
+    height: 80px;
+    width: 1130px;
+    margin: auto;
+}
+header nav .logo{
+    height: 80px;
+    width: fit-content;
+    display: flex;
+    float: left;
+	border: solid 1px hsla(0,0%,100%,0.20);
+	border-radius: 5px;
+}
+header nav .logo .fa-truck-fast{
+    font-size: 40px; 
+}
+header nav .logo a{
+    font-size: 25px; 
+    align-items: center;
+    display: flex;
+}
+header nav .logo a h1{
+    font-weight:400 ;
+}
+header nav .logo a h1 strong{
+    color: red;
+}
+
+header nav ul{
+    display: flex;  
+    list-style-type: none;  
+    float: right;
+    line-height: 80px;
+}
+header nav ul li{
+    align-items: center;
+    width: 120px;
+    font-size: 20px;
+    font-weight: 400;
+
+}
+header nav ul li a{
+    color: white;
+    background-color: red;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition-duration: 0.5s;
+}
+header nav ul li a:hover{
+    background-color: rgba(255, 0, 0, 0.459);
+    
+}
+
+
+
+/*main-start*/
+
+
+main{
+    height: 100vh;
+	width: 100%;
+	/*background-color: cadetblue;*/
+}
+main .main-container{
+    height: 600px;
+	width: 1130px;
+	/*background-color: greenyellow;*/
+	margin: auto;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	position: relative;
+	margin-top: 100px;
+}
+
+main .main-container .our-featurs{
+	position: absolute;
+	top: 0;
+	font-size: 35px;
+	color: blue;
+}
+main .main-container .sections{
+    height: 400px;
+	width: 370px;
+	/*background-color: indianred;*/
+	padding: 20px;
+	text-align: center;
+	border: solid 0px gray;
+	border-radius: 5px;
+	box-shadow: 2px 2px 10px 2px gray ;
+	transition-duration: 0.3s;
+}
+main .main-container .sections:hover{
+	box-shadow: 2px 2px 10px 4px blue ;
+	cursor: pointer;
+	
+}
+main .main-container .sections h3{
+	font-size: 35px;
+	text-align: center;
+}
+main .main-container .sections h3 , i{
+	margin-bottom: 10px;
+}
+main .main-container .sections .fa-solid{
+	font-size: 45px;
+	color: red;
+}
+main .main-container .sections p{
+	font-size: 18px;
+	color: gray;
+}
+
+
+/*contact-us-start*/
+
+
+.contact-us-container{
+	height: 600px;
+	width: 100%;
+	/*background-color:aqua;*/
+	background-image: url("../imgs/calculator-bg.jpg");
+}
+.contact-us{
+	height: 600px;
+	width: 1130px;
+	/*background-color:aqua;*/
+	margin: auto;
+	margin-top: 100px;
+	display: flex;
+}
+.contact-us .img-welcom{
+	position: relative;
+	width: 600px;
+}
+.contact-us .img-welcom .welcome-title{
+	position: absolute;
+	right: 0;
+	top: 220px;
+}
+.contact-us .img-welcom .welcome-title h3{
+	font-size: 40px;
+	color: red;
+}
+.contact-us .contact-section{
+	width: 565px;
+	height: 600px;
+	/*background-color: coral;*/
+	padding: 20px;
+	display: flex;
+	align-items: center;
+}
+.contact-section form {
+	height: fit-content;
+	width: 100%;
+	/*background-color: brown;*/	
+}
+.contact-section form label{
+	font-size: 25px;
+	font-weight: 500;
+	margin-left: 10px;
+	color: gray;
+}
+.contact-section form input{
+	display: block;
+	height: 40px;
+	width: 100%;
+	margin-bottom: 40px;
+	border-radius: 5px;
+	text-indent: 10px;
+	background-color: #ffffff38;
+	outline: none;
+	border: none;
+}
+.contact-section form input::placeholder{
+	font-size: 16px;
+}
+.contact-section form input[type="submit"]{
+	font-size: 25px;
+	font-weight: 500;
+	margin-top: 25px;
+	color: red;
+	background-color: blue;
+	cursor: pointer;
+	transition-duration: 0.5s;
+	border-radius: 25px;
+	border: none;
+}
+.contact-section form input[type="text"]{
+	
+}
+.contact-section form input[type="submit"]:hover{
+	color: blue;
+	background-color: red;
+	
+}
+.contact-section form textarea{
+	height: 200px;
+	width: 100%;
+	background-color: #ffffff38;
+	outline: none;
+	border: none;
+	border-radius: 5px;
+}
+.contact-section form textarea::placeholder{
+	font-size: 17px;
+}
+
+
+
+/*profile-page-start*/
+
+
+.profile-page{
+	height: 690px;
+	width: 1130px;
+/*	background-color: cornflowerblue;*/
+	margin: auto;
+	margin-top: 100px;
+}
+.profile-page h1{
+	text-align: center;
+	margin: 20px 0 20px;
+	font-size: 45px;
+	color: blue;
+}
+
+
+
+/*footer-start*/
+
+
+footer{
+	height: 200px;
+	width: 100%;
+	background-color: #212741;
+	margin-top: 100px;
+	display: flex;
+	align-items: center;
+}
+footer .container-footer{
+	height: 100px;
+	width: 1130px;
+	background-color: #181d30;
+	margin: auto;
+	display: inherit;
+	align-items: center;
+	border-radius: 5px;
+}
+footer .container-footer p{
+	color: white;
+	text-align: center;
+}
+footer .container-footer .left{
+	height: 50px;
+	width: 50%;
+	/*background-color: chartreuse;*/
+}
+footer .container-footer .right{
+	/*background-color: aqua;*/
+	height: 50px;
+	width: 50%;
+}
+footer .container-footer .right ul{
+	display: flex;
+	justify-content: center;
+	list-style-type: none;
+}
+footer .container-footer .right ul li{
+	line-height: 50px;
+	padding-left: 30px;
+}
+footer .container-footer .right ul li a{
+	font-size: 25px;
+}
+
+										/*END-Project*/
